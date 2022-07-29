@@ -75,11 +75,11 @@ If you are using a hosted CloudLabs lab environment, you will find your environm
 
 Use the buttons **(2)** to copy your username and password when prompted to log in to the Azure portal and Power BI account. The **UniqueId (3)** is referenced throughout the lab guide and is used as part of resource naming for the Azure artifacts. When you need to sign in to the lab VM, use the provided **VM username and password (4)** after connecting to the **VM DNS name (5)** with your remote connection application, such as RDP.
 
-![The lab environment details are displayed.](media/hosted-lab-details.png "Environment Details")
+![The lab environment details are displayed.](media/Env_det.png "Environment Details")
 
-When you need to log in to the lab VM, select the **Virtual Machines** tab **(1)** and check the VM status **(2)**. If the VM is **deallocated**, you must start it by selecting the **Start** button **(3)** under Actions.
+When you need to log in to the lab VM, select the **Resources** tab **(1)** and check the VM status **(2)**. If the VM is **deallocated**, you must start it by selecting the **Start** button **(3)** under Actions.
 
-![The Virtual Machines details are displayed.](media/lab-virtual-machines.png "Virtual Machines")
+![The Virtual Machines details are displayed.](media/Resource_det.png "Virtual Machines")
 
 ## Overview
 
@@ -390,9 +390,9 @@ You will learn:
 
 ### Task 6: Stream Analytics (for AI cameras) output settings
 
-1. Select **Outputs** on the left-hand menu, select **+ Add**, then select **Blob storage/ADLS Gen2** from the list.
+1. Select **Outputs** on the left-hand menu, select **+ Add**, then select **Blob storage** from the list.
 
-    ![The blob storage/ADLS Gen2 option is highlighted.](media/stream-analytics-add-blob-output.png "Add storage output")
+    ![The blob storage/ADLS Gen2 option is highlighted.](media/E2-T6-S1.png "Add storage output")
 
 2. In the **Blob storage/ADLS Gen2** form, complete the following:
 
@@ -458,7 +458,7 @@ You will learn:
 
 3. Select **Inputs** on the left-hand menu, select **+ Add stream input**, then select **IoT Hub** from the list.
 
-    ![The IoT Hub input option is highlighted.](media/stream-analytics-add-iot-input.png "Add IoT Hub input")
+    ![The IoT Hub input option is highlighted.](media/E2-T8-S3.png "Add IoT Hub input")
 
 4. In the **IoT Hub** form, complete the following:
 
@@ -479,7 +479,7 @@ You will learn:
 
 6. Select **+ Add reference input**.
 
-    ![The blob storage/ADLS Gen2 item is highlighted.](media/stream-analytics-add-blob-input.png "Add reference input")
+    ![The blob storage/ADLS Gen2 item is highlighted.](media/E2-T8-S6.png "Add reference input")
 
 7. In the **IoT Hub** form, complete the following:
 
@@ -499,9 +499,9 @@ You will learn:
 
 ### Task 9: Stream Analytics (for weight sensors) output settings
 
-1. Select **Outputs** on the left-hand menu, select **+ Add**, then select **Blob storage/ADLS Gen2** from the list.
+1. Select **Outputs** on the left-hand menu, select **+ Add**, then select **Blob storage** from the list.
 
-    ![The blob storage/ADLS Gen2 option is highlighted.](media/stream-analytics-add-blob-output.png "Add storage output")
+    ![The blob storage/ADLS Gen2 option is highlighted.](media/E2-T9-S1.png "Add storage output")
 
 2. In the **Blob storage/ADLS Gen2** form, complete the following:
 
@@ -718,7 +718,7 @@ The diagram below shows the Synapse Studio elements that help us build the data 
 
     ![The notebook is displayed.](media/notebook1-run-all.png "Run all")
 
-    > Please note that it takes several minutes to execute the notebook for the first time. This is because the Spark pool needs to start and allocate resources.
+    > Please note if the Spark pool is selected before running the cell, it takes several minutes to execute the notebook for the first time. This is because the Spark pool needs to start and allocate resources.
 
     You should see an output similar to the following:
 
